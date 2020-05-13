@@ -1,0 +1,302 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway:200,100,400');
+
+html,body{
+    padding: 0%;
+    margin: 0%;
+    font-size: 12px;
+    font-family: 'Open Sans', sans-serif;
+    background-color: white;
+    height: 75vh;    
+}
+
+img{
+  height: 10vh;
+  padding: 0 25px;
+}
+
+nav{
+
+    display: flex;/*Acomoda a la derecha y que no se vea el logo y botones pegados*/
+    background-color: teal;
+    padding: 0vh;
+    color: rgb(0, 0, 0);
+    justify-content: space-between; /*Asignamos el espacio entre el logo y los botones*/
+    align-items: center;/*Alineamos todo lo que esta dentro del nav, al centro*/
+}
+
+nav ul{ 
+    display: flex;
+}
+
+nav li{
+    padding-right: 20px;
+    list-style: none; /*Quita los puntos que se encontran a un lado de la lista*/
+}
+
+nav li a{
+    color: white;
+    text-decoration: none; /*Quita el texto subrayado de los botones*/
+}
+
+nav li a:hover{ /*Hover nos indica que al pasar el puntero encima del boton, el color cambia al que seleccionamos*/
+    color: rgb(112, 112, 112);
+}
+
+/*---------------------------------------------- MAIN SECTION -------------------------------------------*/
+
+.main_section{
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 120%;
+  padding: 0 10rem;
+  background: url(https://images-radio.s3.amazonaws.com/assets-index/background.svg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position:top; /*Curva left,right - up,down*/
+}
+
+.on_air{
+  height: 0vh;
+  margin-top: 25px; 
+  padding: 0 2rem;
+  
+}
+
+.main_section .srcradio{
+  height: 0vh;
+  margin-top: 75px;
+  text-align: left;
+}
+
+ .concert{
+  background: url(https://images-radio.s3.amazonaws.com/assets-index/cover-concert.gif);
+  background-repeat: no-repeat;
+  height: 35vh;
+  background-size: 100%;
+  background-position:top;
+}
+
+.concert .radioanim{
+  background-image: url(https://images-radio.s3.amazonaws.com/assets-index/bible.gif);
+  background-repeat: no-repeat;
+}
+
+.products {
+  background: url(https://images-radio.s3.amazonaws.com/assets-index/background-favs.jpg);
+  background-repeat: no-repeat;
+  height: 80vh;
+  background-size: 100%;
+  position: 60rem;
+  padding: 0 8rem;
+  background-position: top;
+ }
+ 
+
+ .bible{
+   padding: 0 15rem;
+ }
+
+.image_fav {
+  background: url(https://images-radio.s3.amazonaws.com/assets-index/artistas.gif);
+  background-repeat: no-repeat;
+  height: 100;
+  padding: 8%
+}
+.acerca {
+  padding: 0 8rem;
+  height: 35vh;
+  padding: 0 14rem;
+  background: url(https://images-radio.s3.amazonaws.com/assets-index/divine_intervention.gif);
+  display: flex;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: center;
+  background-color: rgb(206, 69, 69);
+}
+
+p{
+  color: rgb(41, 41, 41);
+  font-size: 18px;
+}
+
+.descargar_app{
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  height: 144%;
+  padding: 0 6.5rem;
+  background: url(https://images-radio.s3.amazonaws.com/assets-index/background_app_radio.svg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position:center,right; /*Curva left,right - up,down*/
+  font-size: 32px;
+  color: white;
+}
+
+.boton_app{
+  text-decoration: none;
+  width: 21%;
+  padding: 30px;
+  font-weight: 50px;
+  font-size: 30px;
+  color: #ffffff;
+  background:linear-gradient(45deg,#ea3171,#fc9c4e);
+  border-radius: 60px;
+  
+  
+}
+.boton_app:hover{
+  color:black;
+  background-color: #ffffff;
+}
+
+.final{
+  background: url(https://images-radio.s3.amazonaws.com/assets-index/Banner-1.png);
+  background-repeat: no-repeat;
+  width: 100%;
+}
+
+/*-----------------------------TYPE JS---------------------------------------*/
+
+.main_section h1,h2{
+  font-weight: 300;
+  margin: 0.4rem;
+  
+  }
+  strong{
+    color: teal;
+  }
+  h1{
+    font-size: 3rem;
+    color: rgb(15, 15, 15);
+  }
+  h2{
+  font-size: 3rem;
+  color: rgb(0, 0, 0);
+  }
+  span{
+    color: rgb(214, 188, 39);
+  }
+
+/*------------------------FOOTER---------------------------------*/
+/* Cursor */
+.txt-type > .txt {
+  border-right: 0.2rem solid #777;
+  }
+  
+  @media(min-width: 1200px) {
+  h1 {
+    font-size: 5rem;
+  }
+  }
+  
+  @media(max-width: 800px) {
+  .main_section {
+    padding: 0 1rem;
+  }
+  
+  h1 {
+    font-size: 3rem;
+  }
+  }
+  
+  @media(max-width: 500px) {
+  h1 {
+    font-size: 2.5rem;
+  }
+  
+  h2 {
+    font-size: 1.5rem;
+  }
+  }
+
+  footer{
+    background-color: rgb(22, 131, 194) ;
+    
+  }
+  
+  .rounded-social-buttons {
+  text-align: center;
+  }
+  
+  .rounded-social-buttons .social-button {
+  display: inline-block;
+  position: relative;
+  cursor: pointer;
+  width: 3.125rem;
+  height: 3.125rem;
+  border: 0.125rem solid transparent;
+  padding: 0;
+  text-decoration: none;
+  text-align: center;
+  color: #fefefe;
+  font-size: 1.5625rem;
+  font-weight: normal;
+  line-height: 2em;
+  border-radius: 1.6875rem;
+  transition: all 0.5s ease;
+  margin-right: 0.25rem;
+  margin-bottom: 0.25rem;
+  }
+  
+  .rounded-social-buttons .social-button:hover, .rounded-social-buttons .social-button:focus {
+  -webkit-transform: rotate(360deg);
+      -ms-transform: rotate(360deg);
+          transform: rotate(360deg);
+  }
+  
+  .rounded-social-buttons .fa-twitter, .fa-facebook-f, .fa-linkedin, .fa-youtube, .fa-instagram {
+  font-size: 20px;
+  }
+  
+  .rounded-social-buttons .social-button.facebook {
+  background: #3b5998;
+  }
+  
+  .rounded-social-buttons .social-button.facebook:hover, .rounded-social-buttons .social-button.facebook:focus {
+  color: #3b5998;
+  background: #fefefe;
+  border-color: #3b5998;
+  }
+  
+  .rounded-social-buttons .social-button.twitter {
+  background: #55acee;
+  }
+  
+  .rounded-social-buttons .social-button.twitter:hover, .rounded-social-buttons .social-button.twitter:focus {
+  color: #55acee;
+  background: #fefefe;
+  border-color: #55acee;
+  }
+  
+  .rounded-social-buttons .social-button.linkedin {
+  background: #007bb5;
+  }
+  
+  .rounded-social-buttons .social-button.linkedin:hover, .rounded-social-buttons .social-button.linkedin:focus {
+  color: #007bb5;
+  background: #fefefe;
+  border-color: #007bb5;
+  }
+  
+  .rounded-social-buttons .social-button.youtube {
+  background: #bb0000;
+  }
+  
+  .rounded-social-buttons .social-button.youtube:hover, .rounded-social-buttons .social-button.youtube:focus {
+  color: #bb0000;
+  background: #fefefe;
+  border-color: #bb0000;
+  }
+  
+  .rounded-social-buttons .social-button.instagram {
+  background: #125688;
+  }
+  
+  .rounded-social-buttons .social-button.instagram:hover, .rounded-social-buttons .social-button.instagram:focus {
+  color: #125688;
+  background: #fefefe;
+  border-color: #125688;
+  }

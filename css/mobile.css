@@ -1,0 +1,57 @@
+@media (max-width: 430px){
+  .nav_options{
+    position: unset;
+    height: 8%;
+    padding-left: 80px;
+    font-size: 13px;
+  }
+
+  .main_section{
+    height: 70%;
+  }
+  .on_air{
+      padding-left: 0px;
+  }
+  .concert{
+    top: auto;
+    height: 13.5%;
+  }
+  .products{
+      text-align: left;
+      height: 100%;
+      padding: 4%;
+      background-size: 165vh;
+  }
+  .image_fav{
+      height: 10rem;
+      background-size: 95%;
+  }
+  .descargar_app{
+      height: 55%;
+      font-size: small;
+      background-size: 90vh;
+      padding: 1%;
+  }
+  .boton_app{
+    height: 1rem;
+    font-size: 9px;
+    border-radius: 70px;
+    width: 20%;
+    padding: 2%;
+
+  }
+  h1{
+    color: rgb(192, 77, 36);
+  }
+  .acerca{
+      height: inherit;
+      text-align: center;
+      padding: 0 4rem;
+  }
+
+  .final{
+   background-size: 62vh ;
+   height: 5rem;
+   width: 100%;
+  }
+}
