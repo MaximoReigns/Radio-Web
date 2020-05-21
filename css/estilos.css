@@ -1,5 +1,18 @@
 @import url('https://fonts.googleapis.com/css?family=Raleway:200,100,400');
 
+:root{
+  /*------ Colores */
+  --green-color: #7ACC2D;
+  --black-color: #313337;
+  --white-color: white;
+  /*------ Tipografía */
+  --normal:12px;
+  /*------ Espaciado */
+  --space:10px;
+  --space-2:20px;
+  /*------ Box shadow*/
+  --box:0px 0 2px 1px #e6e5e9;
+}
 html,body{
     padding: 0%;
     margin: 0%;
@@ -10,9 +23,14 @@ html,body{
 }
 
 img{
-  height: 10vh;
+  height: 7vh;
   padding: 0 25px;
 }
+
+p, label{
+  font-size: var(--normal);
+}
+
 
 nav{
 
@@ -57,6 +75,10 @@ nav li a:hover{ /*Hover nos indica que al pasar el puntero encima del boton, el 
   background-position:top; /*Curva left,right - up,down*/
 }
 
+.main_section_h1{
+  color: rgb(12, 92, 68);
+}
+
 .on_air{
   height: 0vh;
   margin-top: 25px; 
@@ -93,32 +115,50 @@ nav li a:hover{ /*Hover nos indica que al pasar el puntero encima del boton, el 
   background-position: top;
  }
  
+ .main_btn{
+  padding: var(--space);
+  background-color: var(--green-color);
+  width: 100%;
+  border: 0px;
+  border-radius: 2px;
+  cursor: pointer;
+  color: var(--white-color);
+}
 
  .bible{
-   padding: 0 15rem;
+  padding: 0 15rem;
  }
 
 .image_fav {
+  padding: 30px 20rem;
   background: url(https://images-radio.s3.amazonaws.com/assets-index/artistas.gif);
   background-repeat: no-repeat;
-  height: 100;
-  padding: 8%
+  height: 140px;
 }
 .acerca {
-  padding: 0 8rem;
-  height: 35vh;
-  padding: 0 14rem;
   background: url(https://images-radio.s3.amazonaws.com/assets-index/divine_intervention.gif);
   display: flex;
   background-repeat: no-repeat;
   background-size: 100%;
-  background-position: center;
-  background-color: rgb(206, 69, 69);
+  background-position: left;
+  text-align: center;
+  height: 30vh;
 }
 
 p{
   color: rgb(41, 41, 41);
   font-size: 18px;
+}
+
+.descargar_app_h1{
+  color: white;
+}
+.sintoniza_h4{
+  color: white;
+}
+
+.artistas_h2{
+  color: rgb(236, 236, 236);
 }
 
 .descargar_app{
@@ -132,7 +172,6 @@ p{
   background-size: 100%;
   background-position:center,right; /*Curva left,right - up,down*/
   font-size: 32px;
-  color: white;
 }
 
 .boton_app{
@@ -160,16 +199,16 @@ p{
 
 /*-----------------------------TYPE JS---------------------------------------*/
 
-.main_section h1,h2{
+.main_section h1,h2,p{
   font-weight: 300;
-  margin: 0.4rem;
+  margin: 0.0rem;
   
   }
   strong{
     color: teal;
   }
   h1{
-    font-size: 3rem;
+    
     color: rgb(15, 15, 15);
   }
   h2{
@@ -179,6 +218,32 @@ p{
   span{
     color: rgb(214, 188, 39);
   }
+
+  /*--------------- Venta ---------------- */
+.modulo_pago{
+  background-color:var(--white-color);
+  box-shadow: var(--box);
+  padding: var(--space);
+}
+.modulo_pago_images{
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100px;
+  text-align: center;
+  margin: auto;
+}
+.data{
+  margin-top: var(--space);
+  width: 100%;
+  height: 35px;
+  border-radius: 2px;
+  border: 1px solid var(--black-color);
+  box-sizing: border-box;
+}
+
+.modulo_pago .main_btn{
+  margin-top: 10px;
+}
 
 /*------------------------FOOTER---------------------------------*/
 /* Cursor */

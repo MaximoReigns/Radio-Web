@@ -1,4 +1,70 @@
-@media (max-width: 430px){
+@media (max-width: 834px){ /*Resposive Tabletas o iPads*/
+  .nav_options{
+    position: unset;
+    height: 8%;
+    padding-left: 80px;
+    font-size: 13px;
+  }
+  .main_section{
+    height: 113%;
+    padding-left: 5.5%;
+    font-size: 25px;
+  }
+  .on_air{
+      padding-left: 0px;
+  }
+  .concert{
+    top: auto;
+    height: 28%;
+  }
+  .products{
+      height: 100%;
+      padding: 4%;
+      background-size: 185vh;
+      
+  }
+  .image_fav{
+      height: 10rem;
+      background-size: 60%;
+      padding: 40px;
+  }
+
+  .parrafo{
+    width: 450px;
+  }
+  .descargar_app{
+    height: 109%;
+    padding-left: 1%;
+
+  }
+  .boton_app{
+  height: 3rem;
+  font-size: 27px;
+  border-radius: 70px;
+  padding: 3%;
+  width: 31%;
+
+  }
+  h1{
+   color: rgb(192, 77, 36);
+  }
+  .bible{
+   padding-left: 100px;
+  }
+  .acerca{
+   padding: 10px;
+   height: 35vh;
+  }
+
+  .final{
+   background-size: 131vh;
+   height: 12rem;
+   width: 100%;
+  }
+}
+
+/*------------------Responsive Celulares-----------------------*/
+@media (max-width: 430px){ 
   .nav_options{
     position: unset;
     height: 8%;
@@ -7,24 +73,33 @@
   }
 
   .main_section{
-    height: 70%;
+    height: 67%;
   }
   .on_air{
       padding-left: 0px;
   }
   .concert{
     top: auto;
-    height: 13.5%;
+    height: 12.5%;
   }
   .products{
       text-align: left;
-      height: 100%;
+      height: 75%;
       padding: 4%;
-      background-size: 165vh;
+      background-size: 185vh;
   }
   .image_fav{
       height: 10rem;
       background-size: 95%;
+      padding: 15px;
+      text-align: left;
+  }
+  .artistas_h2{
+    font-size: 2.3rem;
+    color: black;
+  }
+  .parrafo{
+    width: 370px;
   }
   .descargar_app{
       height: 55%;
@@ -33,18 +108,21 @@
       padding: 1%;
   }
   .boton_app{
-    height: 1rem;
-    font-size: 9px;
+    height: 2rem;
+    font-size: 17px;
     border-radius: 70px;
-    width: 20%;
-    padding: 2%;
+    width: 36%;
+    padding: 4%;
 
   }
   h1{
     color: rgb(192, 77, 36);
   }
+  .bible{
+    padding-left: 100px;
+  }
   .acerca{
-      height: inherit;
+      height: 40vh;
       text-align: center;
       padding: 0 4rem;
   }
@@ -55,3 +133,4 @@
    width: 100%;
   }
 }
+
